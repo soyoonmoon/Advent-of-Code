@@ -18,8 +18,8 @@ with open('/Users/student/Desktop/Advent of Code/Day4.txt') as f:
         a, b = line.split(', ')
         first = a.split('-')
         second = b.split('-')
-        if int(first[0]) <= int(second[0]) and int(first[1]) >= int(second[0]) and int(first[1]) <= int(second[1]):
+        if int(first[0]) <= int(second[0]) and int(first[1]) >= int(second[0]):
             count += 1
-        if int(second[0]) <= int(first[0]) and int(second[1]) >= int(first[0]) and int(second[1]) <= int(first[1]):
+        elif int(second[0]) <= int(first[0]) and int(second[1]) >= int(first[0]):
             count += 1
     print(count)
